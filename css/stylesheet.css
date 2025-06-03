@@ -33,8 +33,9 @@ main {
 
 .logo
 {
-    width:57px;
-    height:66px;
+    width:4rem;
+    height:4rem;
+    border-radius: 100%;
 }
 
 .opcoes

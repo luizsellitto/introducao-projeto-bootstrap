@@ -1,67 +1,129 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Home - Sistema de Cadastro</title>
-    <link rel="stylesheet" href="css/stylesheet.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/stylesheet.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <div class="container">
-            <a href="index.html" class="navbar-brand">
-                <img class="logo" src="img/logo.png" alt="Logo Loja de Roupa">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#meumenu" aria-controls="meumenu" aria-expanded="false" aria-label="Menu Exemplo">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="meumenu">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="clientes.html">Clientes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="fornecedores.html">Fornecedores</a>
-                    </li>
-                </ul>
-            </div>
+      <div class="container">
+        <a href="index.html" class="navbar-brand">
+          <img class="logo" src="img/logo.png" alt="Logo Loja de Roupa" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#meumenu"
+          aria-controls="meumenu"
+          aria-expanded="false"
+          aria-label="Menu Exemplo"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="meumenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="clientes.html">Clientes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="fornecedores.html">Fornecedores</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
-
+    <div class="alert alert-info text-center m-0 rounded-0" role="alert">
+      Este sistema está em fase de testes. Alguns recursos podem ser atualizados
+      em breve.
+    </div>
     <header class="bg-light py-5">
-        <div class="container text-center">
-            <h1 class="display-4">Bem-vindo ao Sistema de Cadastro</h1>
-            <p class="lead">Gerencie facilmente os cadastros de seus clientes e fornecedores.</p>
-            <a href="clientes.html" class="btn btn-primary btn-lg m-2">
-                <i class="bi bi-people"></i> Acessar Clientes
-            </a>
-            <a href="fornecedores.html" class="btn btn-success btn-lg m-2">
-                <i class="bi bi-truck"></i> Acessar Fornecedores
-            </a>
-        </div>
+      <div class="container text-center">
+        <h1 class="display-4">Bem-vindo ao Sistema de Cadastro</h1>
+        <p class="lead">
+          Gerencie facilmente os cadastros de seus clientes e fornecedores.
+        </p>
+        <a href="clientes.html" class="btn btn-primary btn-lg m-2">
+          <i class="bi bi-people"></i> Acessar Clientes
+        </a>
+        <a href="fornecedores.html" class="btn btn-success btn-lg m-2">
+          <i class="bi bi-truck"></i> Acessar Fornecedores
+        </a>
+      </div>
     </header>
 
     <section class="container my-5">
-        <div class="d-flex justify-content-center"><img src="img/joinha.png"/></div>
-        <h2>Sobre o Sistema</h2>
-        <p>
-            Este sistema foi desenvolvido para facilitar o gerenciamento de cadastros de clientes e fornecedores.
-        </p>
-        <p>
-            Utilize o menu acima ou os botões para navegar pelas funcionalidades disponíveis.
-        </p>
+      <div
+        id="carouselExample"
+        class="carousel slide mb-4"
+        data-bs-ride="carousel"
+        style="max-width: 500px; margin: 0 auto"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="img/grafico-fornecedores.jpg"
+              class="d-block w-100"
+              alt="Imagem 1"
+            />
+          </div>
+          <div class="carousel-item">
+            <img src="img/joinha.png" class="d-block w-100" alt="Imagem 2" />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Próximo</span>
+        </button>
+      </div>
+
+      <h2>Sobre o Sistema</h2>
+      <p>
+        Este sistema foi desenvolvido para facilitar o gerenciamento de
+        cadastros de clientes e fornecedores.
+      </p>
+      <p>
+        Utilize o menu acima ou os botões para navegar pelas funcionalidades
+        disponíveis.
+      </p>
     </section>
 
     <footer class="bg-dark text-light py-3 mt-5">
-        <div class="container text-center">
-            <small>&copy; 2025 Luiz Sellitto e Lucas Dalossa - Todos os direitos reservados.</small>
-        </div>
+      <div class="container text-center">
+        <small
+          >&copy; 2025 Luiz Sellitto e Lucas Dalossa - Todos os direitos
+          reservados.</small
+        >
+      </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
