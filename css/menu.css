@@ -1,0 +1,49 @@
+a
+{
+    text-decoration: none;
+    color: white;
+}
+a:visited{
+    color:white;
+}
+a:hover
+{
+    color:white;
+}
+
+.page
+{
+    position: relative;
+    display: flex;
+    flex-direction:column;
+}
+
+.slidebar
+{
+    background-color: #282a35;
+    display:flex;
+    padding:10px;
+}
+
+.logo
+{
+    width:66px;
+    height:66px;
+}
+
+@media (min-width: 640px)
+{
+    .page
+    {
+        flex-direction: row;
+    }
+    
+    .slidebar
+    {
+        height: 100vh;
+        width: auto;
+        position: sticky;
+        top:0;
+        display: block;
+    }
+}
