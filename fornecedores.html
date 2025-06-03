@@ -2,54 +2,43 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Cadastro de Fornecedor</title>
     <link rel="stylesheet" href="css/stylesheet.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
-    <!--<header>
-        <div class="topo">
-            <div class="">
-                <img class="logoPolitec" src="img/politec_logo.png">
-            </div>
-            <nav class="opcoes">
-                <ul>
-                    <li><a href="">Início</a></li>
-                    <li><a href="">Clientes</a></li>
-                    <li><a href="">Fornecedores</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>-->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container">
             <a href="index.html" class="navbar-brand">
-                <img class="logoPolitec" src="img/politec_logo.png">
+                <img class="logo" src="img/logo.png" alt="Logo">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#meumenu" aria-controls="meumenu" aria-expanded="false" aria-label="Menu Exemplo">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#meumenu" aria-controls="meumenu" aria-expanded="false" aria-label="Menu">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="meumenu">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Clientes</a>
+                        <a class="nav-link" href="clientes.html">Clientes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Fornecedor</a>
+                        <a class="nav-link active" aria-current="page" href="#">Fornecedores</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+
     <br>
+
     <div class="container">
         <h1>Cadastro de Fornecedor</h1>
         <p>Cadastre um fornecedor e mantenha seus dados atualizados</p>
         <hr>
+
         <form>
             <div class="row">
                 <div class="form-group col-4">
@@ -65,6 +54,7 @@
                     <input type="text" class="form-control">
                 </div>
             </div>
+
             <div class="row">
                 <div class="form-group col-3">
                     <label>Inscrição Estadual:</label>
@@ -75,7 +65,7 @@
                     <input type="text" class="form-control">
                 </div>
                 <div class="form-group col-3">
-                    <label>Situção:</label>
+                    <label>Situação:</label>
                     <select class="form-control">
                         <option value="">--Selecionar--</option>
                         <option value="1">Ativo</option>
@@ -87,7 +77,9 @@
                     <input type="text" class="form-control">
                 </div>
             </div>
+
             <hr>
+
             <div class="row">
                 <div class="form-group col-4">
                     <label>CEP: *</label>
@@ -102,6 +94,7 @@
                     <input type="text" class="form-control">
                 </div>
             </div>
+
             <div class="row">
                 <div class="form-group col-5">
                     <label>Bairro: *</label>
@@ -149,7 +142,9 @@
                     </select>
                 </div>
             </div>
+
             <hr>
+
             <div class="row">
                 <div class="form-group col-5">
                     <label>Contato 1: *</label>
@@ -164,7 +159,9 @@
                     <input type="text" class="form-control">
                 </div>
             </div>
+
             <hr>
+
             <div class="row">
                 <div class="form-group col-6">
                     <label>Email 1: *</label>
@@ -175,20 +172,28 @@
                     <input type="email" class="form-control">
                 </div>
             </div>
+
             <br>
+
             <div class="row">
                 <div class="form-group">
                     <button type="submit" class="btn btn-success">
                         Salvar <i class="bi bi-floppy"></i>
                     </button>
-                
-                    <button type="submit" class="btn btn-danger">
+                    <button type="reset" class="btn btn-danger">
                         Cancelar <i class="bi bi-arrow-left-circle"></i>
                     </button>
                 </div>
             </div>
         </form>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> 
+
+    <footer class="bg-dark text-light py-3 mt-5">
+        <div class="container text-center">
+            <small>&copy; 2025 Luiz Sellitto e Lucas Dalossa - Todos os direitos reservados.</small>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

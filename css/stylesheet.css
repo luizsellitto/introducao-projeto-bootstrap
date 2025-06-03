@@ -5,6 +5,20 @@ header
     top:0px;
     width: 100%;
 }
+body
+{
+    height: 100%;
+    margin: 0;
+}
+
+body
+{
+    display: flex;
+    flex-direction: column;
+}
+main {
+    flex: 1;
+}
 
 .topo
 {
@@ -18,7 +32,7 @@ header
     margin-top: 150px;
 }
 
-.logoPolitec
+.logo
 {
     width:57px;
     height:66px;
